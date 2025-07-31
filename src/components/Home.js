@@ -144,7 +144,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="text-lg sm:text-2xl font-bold bg-gradient-to-r from-[rgb(218,255,1)] to-[rgb(166,190,21)] bg-clip-text text-transparent">
-                AKSHAJ
+                
               </div>
             </div>
             <div className="hidden md:flex space-x-6 lg:space-x-8">
@@ -187,13 +187,13 @@ const Home = () => {
         <div className="container mx-auto text-center relative z-10">
           <div className="mb-8 sm:mb-12">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 sm:mb-6 leading-tight">
-              <span className="text-white">AKSHAJ</span>{' '}
-              <span className="bg-gradient-to-r from-[rgb(218,255,1)] via-[rgb(255,255,1)] to-[rgb(218,255,1)] bg-clip-text text-transparent animate-pulse">SHIVARA</span>{' '}
-              <span className="text-white">MADHUSUDHAN</span>
+              <span className="text-white">Hi, </span>{' '}
+              <span className="bg-gradient-to-r from-[rgb(218,255,1)] via-[rgb(255,255,1)] to-[rgb(218,255,1)] bg-clip-text text-transparent animate-pulse">I am</span>{' '}
+              <span className="text-white">Akshaj</span>
             </h1>
             <p className="text-lg sm:text-xl lg:text-2xl text-[rgb(218,218,218)] mb-8 sm:mb-12 max-w-4xl mx-auto leading-relaxed px-4">
-              BUILDING <span className="text-[rgb(218,255,1)] font-semibold">SAFER SYSTEMS</span> AT THE INTERSECTION OF{' '}
-              <span className="text-[rgb(218,255,1)] font-semibold">CYBERSECURITY & AI</span>
+              I am Building<span className="text-[rgb(218,255,1)] font-semibold">Safer Systems</span> at the Intersection of{' '}
+              <span className="text-[rgb(218,255,1)] font-semibold">Cybersecurity and AI</span>
             </p>
           </div>
 
@@ -515,7 +515,7 @@ const Home = () => {
       <footer className="py-12 px-6 border-t-2 border-[rgb(218,255,1)]/30 bg-gradient-to-r from-[rgb(17,17,19)] to-[rgb(26,28,30)]">
         <div className="container mx-auto text-center">
           <div className="text-[rgb(161,161,170)] mb-6 text-lg">
-            © 2024 Akshaj Shivara Madhusudhan. All rights reserved.
+            © 2025 Akshaj Shivara Madhusudhan. All rights reserved.
           </div>
           <div className="text-sm text-[rgb(161,161,170)]">
             Built with React • Secured by Design • Enhanced with <span className="text-[rgb(218,255,1)]">Three.js</span> • Powered by <span className="text-[rgb(218,255,1)]">MongoDB</span>
