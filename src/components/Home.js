@@ -141,7 +141,7 @@ const Home = () => {
                  <img 
                     src="/images/ak_logo.png" 
                     alt="Akshaj navbar logo"
-                    className="w-full h-full object-cover"
+                    className="w-12 h-12 rounded-lg"
                   />
               {/* Logo Placeholder 
               <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-[rgb(218,255,1)] to-[rgb(166,190,21)] rounded-xl flex items-center justify-center shadow-lg shadow-[rgb(218,255,1)]/20">
