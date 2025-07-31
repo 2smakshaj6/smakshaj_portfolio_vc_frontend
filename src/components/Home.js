@@ -139,7 +139,7 @@ const Home = () => {
             <div className="flex items-center space-x-3 sm:space-x-4">
 
                  <img 
-                    src="public/images/ak_logo.png" 
+                    src="/images/ak_logo.png" 
                     alt="Akshaj navbar logo"
                     className="w-full h-full object-cover"
                   />
@@ -283,7 +283,7 @@ const Home = () => {
                   </div>
                   */}
                   <img 
-                    src="public/images/ak_profile.jpg" 
+                    src="/images/ak_profile.jpg" 
                     alt="Akshaj Shivara Madhusudhan - Cybersecurity Professional"
                     className="w-full h-full object-cover"
                   />
