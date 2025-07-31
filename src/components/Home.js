@@ -140,13 +140,13 @@ const Home = () => {
               {/* Logo Placeholder */}
               <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-[rgb(218,255,1)] to-[rgb(166,190,21)] rounded-xl flex items-center justify-center shadow-lg shadow-[rgb(218,255,1)]/20">
                 <div className="w-8 h-8 sm:w-10 sm:h-10 bg-[rgb(17,17,19)] rounded-lg flex items-center justify-center">
-                                    {
+                                
                   <img 
                     src="public/images/ak_logo.png" 
                     alt="Akshaj navbar logo"
                     className="w-full h-full object-cover"
                   />
-                  }
+                  
              {/* <Shield className="h-4 w-4 sm:h-6 sm:w-6 text-[rgb(218,255,1)]" />*/}
                 </div>
               </div>
@@ -285,13 +285,13 @@ const Home = () => {
                   </div>
                   
                   {/* YOUR PHOTO - Uncomment this when you add your image */}
-                  {
+                  
                   <img 
                     src="public/images/ak_profile.jpg" 
                     alt="Akshaj Shivara Madhusudhan - Cybersecurity Professional"
                     className="w-full h-full object-cover"
                   />
-                  }
+                  
                 </div>
                 
                 {/* Decorative elements */}
