@@ -182,8 +182,8 @@ const Home = () => {
         </div>
       </nav>
 
-      {/* Mobile-Optimized Hero Section */}
-      <section className="pt-20 sm:pt-28 lg:pt-32 pb-16 sm:pb-20 lg:pb-24 px-4 sm:px-6 relative">
+      {/* Mobile-Optimized Hero Section with Better Spacing */}
+      <section className="pt-24 sm:pt-32 lg:pt-36 pb-20 sm:pb-24 lg:pb-28 px-4 sm:px-6 relative">{/* Updated padding-top to account for larger navbar */}
         <div className="container mx-auto text-center relative z-10">
           <div className="mb-8 sm:mb-12">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 sm:mb-6 leading-tight">
