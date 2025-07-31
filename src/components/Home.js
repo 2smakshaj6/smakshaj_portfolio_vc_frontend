@@ -132,39 +132,39 @@ const Home = () => {
       {/* Three.js Background */}
       <BackgroundScene />
       
-      {/* Enhanced Mobile-First Navigation */}
+      {/* Enhanced Mobile-First Navigation with Better Spacing */}
       <nav className="fixed top-0 w-full z-50 bg-gradient-to-r from-[rgb(17,17,19)]/95 via-[rgb(26,28,30)]/95 to-[rgb(17,17,19)]/95 backdrop-blur-md border-b-2 border-[rgb(218,255,1)]/30 shadow-lg">
-        <div className="container mx-auto px-4 sm:px-6 py-3 sm:py-4">
+        <div className="container mx-auto px-4 sm:px-6 py-4 sm:py-6">
           <div className="flex justify-between items-center">
-            <div className="flex items-center space-x-2 sm:space-x-4">
+            <div className="flex items-center space-x-3 sm:space-x-4">
               {/* Logo Placeholder */}
-              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-[rgb(218,255,1)] to-[rgb(166,190,21)] rounded-lg flex items-center justify-center shadow-lg shadow-[rgb(218,255,1)]/20">
-                <div className="w-6 h-6 sm:w-8 sm:h-8 bg-[rgb(17,17,19)] rounded-md flex items-center justify-center">
-                  <Shield className="h-3 w-3 sm:h-5 sm:w-5 text-[rgb(218,255,1)]" />
+              <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-[rgb(218,255,1)] to-[rgb(166,190,21)] rounded-xl flex items-center justify-center shadow-lg shadow-[rgb(218,255,1)]/20">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 bg-[rgb(17,17,19)] rounded-lg flex items-center justify-center">
+                  <Shield className="h-4 w-4 sm:h-6 sm:w-6 text-[rgb(218,255,1)]" />
                 </div>
               </div>
-              <div className="text-lg sm:text-2xl font-bold bg-gradient-to-r from-[rgb(218,255,1)] to-[rgb(166,190,21)] bg-clip-text text-transparent">
-                
+              <div className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-[rgb(218,255,1)] to-[rgb(166,190,21)] bg-clip-text text-transparent">
+                AKSHAJ
               </div>
             </div>
-            <div className="hidden md:flex space-x-6 lg:space-x-8">
-              <button onClick={() => scrollToSection('about')} className="text-white hover:text-[rgb(218,255,1)] transition-all duration-300 font-medium relative group">
+            <div className="hidden md:flex space-x-8 lg:space-x-10">
+              <button onClick={() => scrollToSection('about')} className="text-white hover:text-[rgb(218,255,1)] transition-all duration-300 font-medium relative group py-2">
                 About
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[rgb(218,255,1)] transition-all duration-300 group-hover:w-full"></span>
               </button>
-              <button onClick={() => scrollToSection('experience')} className="text-white hover:text-[rgb(218,255,1)] transition-all duration-300 font-medium relative group">
+              <button onClick={() => scrollToSection('experience')} className="text-white hover:text-[rgb(218,255,1)] transition-all duration-300 font-medium relative group py-2">
                 Experience
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[rgb(218,255,1)] transition-all duration-300 group-hover:w-full"></span>
               </button>
-              <button onClick={() => scrollToSection('projects')} className="text-white hover:text-[rgb(218,255,1)] transition-all duration-300 font-medium relative group">
+              <button onClick={() => scrollToSection('projects')} className="text-white hover:text-[rgb(218,255,1)] transition-all duration-300 font-medium relative group py-2">
                 Projects
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[rgb(218,255,1)] transition-all duration-300 group-hover:w-full"></span>
               </button>
-              <button onClick={() => scrollToSection('skills')} className="text-white hover:text-[rgb(218,255,1)] transition-all duration-300 font-medium relative group">
+              <button onClick={() => scrollToSection('skills')} className="text-white hover:text-[rgb(218,255,1)] transition-all duration-300 font-medium relative group py-2">
                 Skills
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[rgb(218,255,1)] transition-all duration-300 group-hover:w-full"></span>
               </button>
-              <button onClick={() => scrollToSection('contact')} className="text-white hover:text-[rgb(218,255,1)] transition-all duration-300 font-medium relative group">
+              <button onClick={() => scrollToSection('contact')} className="text-white hover:text-[rgb(218,255,1)] transition-all duration-300 font-medium relative group py-2">
                 Contact
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[rgb(218,255,1)] transition-all duration-300 group-hover:w-full"></span>
               </button>
@@ -173,7 +173,7 @@ const Home = () => {
             <div className="md:hidden">
               <button 
                 onClick={() => scrollToSection('contact')}
-                className="text-[rgb(218,255,1)] hover:text-white transition-colors p-2"
+                className="text-[rgb(218,255,1)] hover:text-white transition-colors p-3 rounded-lg border border-[rgb(218,255,1)]/30"
               >
                 <Terminal className="h-5 w-5" />
               </button>
@@ -192,7 +192,7 @@ const Home = () => {
               <span className="text-white">Akshaj</span>
             </h1>
             <p className="text-lg sm:text-xl lg:text-2xl text-[rgb(218,218,218)] mb-8 sm:mb-12 max-w-4xl mx-auto leading-relaxed px-4">
-              I am Building<span className="text-[rgb(218,255,1)] font-semibold">Safer Systems</span> at the Intersection of{' '}
+              I am Building<span className="text-[rgb(218,255,1)] font-semibold"> Safer Systems</span> at the Intersection of{' '}
               <span className="text-[rgb(218,255,1)] font-semibold">Cybersecurity and AI</span>
             </p>
           </div>
@@ -206,7 +206,7 @@ const Home = () => {
                   <div className="w-3 h-3 sm:w-4 sm:h-4 bg-yellow-500 rounded-full shadow-lg animate-pulse"></div>
                   <div className="w-3 h-3 sm:w-4 sm:h-4 bg-green-500 rounded-full shadow-lg animate-pulse"></div>
                 </div>
-                <div className="text-[rgb(218,255,1)] font-mono text-sm sm:text-lg font-semibold">akshaj@security-terminal:~</div>
+                <div className="text-[rgb(218,255,1)] font-mono text-sm sm:text-lg font-semibold">akshajmadhusudhan ~ -zsh - 73x5</div>
               </div>
               <div className="p-4 sm:p-6 lg:p-8 font-mono text-left text-sm sm:text-base lg:text-lg">
                 <div className="flex items-center">
@@ -247,32 +247,61 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Mobile-Optimized About Section */}
-      <section id="about" className="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 bg-gradient-to-r from-[rgb(26,28,30)]/80 to-[rgb(38,40,42)]/80 backdrop-blur-sm">
+      {/* Enhanced Mobile-Optimized About Section with Better Alignment */}
+      <section id="about" className="py-20 sm:py-24 lg:py-28 px-4 sm:px-6 bg-gradient-to-r from-[rgb(26,28,30)]/80 to-[rgb(38,40,42)]/80 backdrop-blur-sm">
         <div className="container mx-auto">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center mb-12 sm:mb-16">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-center mb-16 sm:mb-20">
             About <span className="bg-gradient-to-r from-[rgb(218,255,1)] to-[rgb(166,190,21)] bg-clip-text text-transparent">Me</span>
           </h2>
           
-          <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 sm:gap-16 items-center">
-            {/* Mobile-Optimized Photo Placeholder */}
-            <div className="flex justify-center lg:justify-end order-1 lg:order-none">
+          <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-center">
+            {/* Enhanced Photo Upload Section */}
+            <div className="flex justify-center lg:justify-start order-1 lg:order-none">
               <div className="relative group">
-                <div className="w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 bg-gradient-to-br from-[rgb(218,255,1)]/20 to-[rgb(166,190,21)]/20 rounded-2xl sm:rounded-3xl border-2 border-[rgb(218,255,1)]/30 flex items-center justify-center backdrop-blur-sm hover:border-[rgb(218,255,1)] transition-all duration-300 hover:shadow-2xl hover:shadow-[rgb(218,255,1)]/20">
-                  <div className="text-center">
-                    <Camera className="h-12 w-12 sm:h-14 sm:w-14 lg:h-16 lg:w-16 text-[rgb(218,255,1)] mx-auto mb-3 sm:mb-4" />
-                    <p className="text-[rgb(218,218,218)] font-medium text-sm sm:text-base">Professional Photo</p>
-                    <p className="text-[rgb(161,161,170)] text-xs sm:text-sm mt-1 sm:mt-2">Upload your image here</p>
+                <div className="w-80 h-80 sm:w-96 sm:h-96 lg:w-[400px] lg:h-[400px] bg-gradient-to-br from-[rgb(218,255,1)]/20 to-[rgb(166,190,21)]/20 rounded-3xl border-2 border-[rgb(218,255,1)]/30 flex items-center justify-center backdrop-blur-sm hover:border-[rgb(218,255,1)] transition-all duration-300 hover:shadow-2xl hover:shadow-[rgb(218,255,1)]/20 cursor-pointer">
+                  {/* Hidden file input for image upload */}
+                  <input 
+                    type="file" 
+                    accept="image/*" 
+                    className="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-10"
+                    onChange={(e) => {
+                      // TODO: Replace this with your image handling logic
+                      const file = e.target.files[0];
+                      if (file) {
+                        const reader = new FileReader();
+                        reader.onload = (event) => {
+                          // For now, just log - you can implement image upload to your backend
+                          console.log('Image uploaded:', file.name);
+                          alert(`Image "${file.name}" selected! To use this image, upload it to your hosting service and update the portfolio.`);
+                        };
+                        reader.readAsDataURL(file);
+                      }
+                    }}
+                  />
+                  <div className="text-center pointer-events-none">
+                    <Camera className="h-16 w-16 sm:h-20 sm:w-20 text-[rgb(218,255,1)] mx-auto mb-4" />
+                    <p className="text-[rgb(218,218,218)] font-semibold text-lg">Click to Upload Photo</p>
+                    <p className="text-[rgb(161,161,170)] text-sm mt-2 max-w-64 mx-auto">
+                      Upload your professional headshot here. Supports JPG, PNG, WebP formats.
+                    </p>
                   </div>
                 </div>
-                <div className="absolute -top-2 -right-2 sm:-top-4 sm:-right-4 w-6 h-6 sm:w-8 sm:h-8 bg-[rgb(218,255,1)] rounded-full animate-pulse"></div>
-                <div className="absolute -bottom-4 -left-4 sm:-bottom-6 sm:-left-6 w-8 h-8 sm:w-12 sm:h-12 bg-[rgb(218,255,1)]/30 rounded-full animate-pulse delay-1000"></div>
+                {/* Decorative elements */}
+                <div className="absolute -top-6 -right-6 w-12 h-12 bg-[rgb(218,255,1)] rounded-full animate-pulse opacity-70"></div>
+                <div className="absolute -bottom-8 -left-8 w-16 h-16 bg-[rgb(218,255,1)]/30 rounded-full animate-pulse delay-1000 opacity-50"></div>
+                
+                {/* Upload Instructions */}
+                <div className="absolute -bottom-16 left-0 right-0 text-center">
+                  <p className="text-xs text-[rgb(161,161,170)] bg-[rgb(26,28,30)]/80 px-4 py-2 rounded-lg backdrop-blur-sm">
+                    💡 Tip: Use a 400x400px professional headshot for best results
+                  </p>
+                </div>
               </div>
             </div>
             
-            {/* Mobile-Optimized About Content */}
-            <div className="space-y-6 sm:space-y-8 order-2 lg:order-none">
-              <div className="space-y-4 sm:space-y-6 text-base sm:text-lg leading-relaxed">
+            {/* Enhanced About Content with Better Alignment */}
+            <div className="space-y-8 lg:space-y-10 order-2 lg:order-none lg:pl-8">
+              <div className="space-y-6 text-lg sm:text-xl leading-relaxed">
                 <p className="text-[rgb(218,218,218)]">
                   {portfolioData.personalInfo?.bio || "I'm a cybersecurity professional passionate about building safer digital ecosystems through the strategic integration of AI and traditional security practices."}
                 </p>
@@ -284,14 +313,17 @@ const Home = () => {
                 </p>
               </div>
               
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
-                <div className="text-center p-3 sm:p-4 bg-[rgb(38,40,42)]/50 rounded-lg sm:rounded-xl border border-[rgb(218,255,1)]/20">
-                  <Shield className="h-6 w-6 sm:h-8 sm:w-8 text-[rgb(218,255,1)] mx-auto mb-2" />
-                  <div className="text-white font-semibold text-sm sm:text-base">Security First</div>
+              {/* Enhanced Feature Cards */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-10">
+                <div className="text-center p-6 bg-gradient-to-br from-[rgb(38,40,42)]/60 to-[rgb(26,28,30)]/60 rounded-2xl border border-[rgb(218,255,1)]/20 hover:border-[rgb(218,255,1)]/50 transition-all duration-300 backdrop-blur-sm">
+                  <Shield className="h-10 w-10 text-[rgb(218,255,1)] mx-auto mb-3" />
+                  <div className="text-white font-semibold text-lg">Security First</div>
+                  <div className="text-[rgb(161,161,170)] text-sm mt-2">Defense in Depth</div>
                 </div>
-                <div className="text-center p-3 sm:p-4 bg-[rgb(38,40,42)]/50 rounded-lg sm:rounded-xl border border-[rgb(218,255,1)]/20">
-                  <Zap className="h-6 w-6 sm:h-8 sm:w-8 text-[rgb(218,255,1)] mx-auto mb-2" />
-                  <div className="text-white font-semibold text-sm sm:text-base">AI Innovation</div>
+                <div className="text-center p-6 bg-gradient-to-br from-[rgb(38,40,42)]/60 to-[rgb(26,28,30)]/60 rounded-2xl border border-[rgb(218,255,1)]/20 hover:border-[rgb(218,255,1)]/50 transition-all duration-300 backdrop-blur-sm">
+                  <Zap className="h-10 w-10 text-[rgb(218,255,1)] mx-auto mb-3" />
+                  <div className="text-white font-semibold text-lg">AI Innovation</div>
+                  <div className="text-[rgb(161,161,170)] text-sm mt-2">Next-Gen Solutions</div>
                 </div>
               </div>
             </div>
@@ -487,7 +519,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Contact Section */}
+      {/* Enhanced Contact Section with Working Links */}
       <section id="contact" className="py-24 px-6 bg-gradient-to-br from-[rgb(26,28,30)]/80 to-[rgb(38,40,42)]/80 backdrop-blur-sm">
         <div className="container mx-auto text-center">
           <h2 className="text-5xl font-bold mb-12">
@@ -498,15 +530,85 @@ const Home = () => {
             Let's secure the digital future together.
           </p>
           
-          <div className="flex justify-center gap-8 mb-16">
-            <Button className="bg-gradient-to-r from-[rgb(218,255,1)] to-[rgb(166,190,21)] text-[rgb(17,17,19)] hover:from-[rgb(166,190,21)] hover:to-[rgb(218,255,1)] px-10 py-4 rounded-2xl text-xl font-bold transition-all duration-300 hover:shadow-2xl hover:shadow-[rgb(218,255,1)]/40 hover:scale-105">
+          <div className="flex flex-col sm:flex-row justify-center gap-6 mb-16">
+            {/* Email Button - REPLACE EMAIL ADDRESS */}
+            <Button 
+              onClick={() => window.open('mailto:akshaj@example.com?subject=Collaboration Opportunity&body=Hi Akshaj, I would like to discuss...', '_blank')}
+              className="bg-gradient-to-r from-[rgb(218,255,1)] to-[rgb(166,190,21)] text-[rgb(17,17,19)] hover:from-[rgb(166,190,21)] hover:to-[rgb(218,255,1)] px-10 py-4 rounded-2xl text-xl font-bold transition-all duration-300 hover:shadow-2xl hover:shadow-[rgb(218,255,1)]/40 hover:scale-105"
+            >
               <Mail className="h-6 w-6 mr-3" />
               Email Me
             </Button>
-            <Button variant="outline" className="border-2 border-[rgb(218,255,1)]/50 text-[rgb(218,255,1)] hover:border-[rgb(218,255,1)] hover:bg-[rgb(218,255,1)]/10 px-10 py-4 rounded-2xl text-xl font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-[rgb(218,255,1)]/20">
+            
+            {/* LinkedIn Button - REPLACE LINKEDIN URL */}
+            <Button 
+              onClick={() => window.open('https://linkedin.com/in/your-linkedin-username', '_blank')}
+              variant="outline" 
+              className="border-2 border-[rgb(218,255,1)]/50 text-[rgb(218,255,1)] hover:border-[rgb(218,255,1)] hover:bg-[rgb(218,255,1)]/10 px-10 py-4 rounded-2xl text-xl font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-[rgb(218,255,1)]/20"
+            >
               <Linkedin className="h-6 w-6 mr-3" />
               LinkedIn
             </Button>
+          </div>
+          
+          {/* Additional Contact Options */}
+          <div className="flex flex-wrap justify-center gap-8 mb-12">
+            {/* GitHub Button - REPLACE GITHUB URL */}
+            <Button 
+              onClick={() => window.open('https://github.com/your-github-username', '_blank')}
+              variant="ghost"
+              className="text-[rgb(218,218,218)] hover:text-[rgb(218,255,1)] hover:bg-[rgb(218,255,1)]/10 px-6 py-3 rounded-xl transition-all duration-300"
+            >
+              <Github className="h-5 w-5 mr-2" />
+              GitHub
+            </Button>
+            
+            {/* Phone Button - REPLACE PHONE NUMBER */}
+            <Button 
+              onClick={() => window.open('tel:+1-555-123-4567', '_blank')}
+              variant="ghost"
+              className="text-[rgb(218,218,218)] hover:text-[rgb(218,255,1)] hover:bg-[rgb(218,255,1)]/10 px-6 py-3 rounded-xl transition-all duration-300"
+            >
+              <Terminal className="h-5 w-5 mr-2" />
+              +1 (555) 123-4567
+            </Button>
+            
+            {/* Website Button - REPLACE WEBSITE URL */}
+            <Button 
+              onClick={() => window.open('https://your-website.com', '_blank')}
+              variant="ghost"
+              className="text-[rgb(218,218,218)] hover:text-[rgb(218,255,1)] hover:bg-[rgb(218,255,1)]/10 px-6 py-3 rounded-xl transition-all duration-300"
+            >
+              <ExternalLink className="h-5 w-5 mr-2" />
+              Portfolio
+            </Button>
+          </div>
+          
+          {/* Contact Information Card */}
+          <div className="max-w-2xl mx-auto bg-gradient-to-br from-[rgb(38,40,42)]/60 to-[rgb(26,28,30)]/60 p-8 rounded-2xl border border-[rgb(218,255,1)]/20 backdrop-blur-sm">
+            <h3 className="text-2xl font-bold text-white mb-6">Contact Information</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+              <div>
+                <h4 className="text-lg font-semibold text-[rgb(218,255,1)] mb-2">Email</h4>
+                <p className="text-[rgb(218,218,218)]">akshaj@example.com</p>
+                <p className="text-[rgb(161,161,170)] text-sm">Replace with your email</p>
+              </div>
+              <div>
+                <h4 className="text-lg font-semibold text-[rgb(218,255,1)] mb-2">Location</h4>
+                <p className="text-[rgb(218,218,218)]">Buffalo, NY</p>
+                <p className="text-[rgb(161,161,170)] text-sm">Available for remote work</p>
+              </div>
+              <div>
+                <h4 className="text-lg font-semibold text-[rgb(218,255,1)] mb-2">Response Time</h4>
+                <p className="text-[rgb(218,218,218)]">Within 24 hours</p>
+                <p className="text-[rgb(161,161,170)] text-sm">Professional inquiries</p>
+              </div>
+              <div>
+                <h4 className="text-lg font-semibold text-[rgb(218,255,1)] mb-2">Best Time</h4>
+                <p className="text-[rgb(218,218,218)]">9 AM - 6 PM EST</p>
+                <p className="text-[rgb(161,161,170)] text-sm">Monday to Friday</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
