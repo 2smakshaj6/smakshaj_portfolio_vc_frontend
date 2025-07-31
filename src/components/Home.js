@@ -255,47 +255,40 @@ const Home = () => {
           </h2>
           
           <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-center">
-            {/* Enhanced Photo Upload Section */}
+            {/* Professional Photo Section */}
             <div className="flex justify-center lg:justify-start order-1 lg:order-none">
               <div className="relative group">
-                <div className="w-80 h-80 sm:w-96 sm:h-96 lg:w-[400px] lg:h-[400px] bg-gradient-to-br from-[rgb(218,255,1)]/20 to-[rgb(166,190,21)]/20 rounded-3xl border-2 border-[rgb(218,255,1)]/30 flex items-center justify-center backdrop-blur-sm hover:border-[rgb(218,255,1)] transition-all duration-300 hover:shadow-2xl hover:shadow-[rgb(218,255,1)]/20 cursor-pointer">
-                  {/* Hidden file input for image upload */}
-                  <input 
-                    type="file" 
-                    accept="image/*" 
-                    className="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-10"
-                    onChange={(e) => {
-                      // TODO: Replace this with your image handling logic
-                      const file = e.target.files[0];
-                      if (file) {
-                        const reader = new FileReader();
-                        reader.onload = (event) => {
-                          // For now, just log - you can implement image upload to your backend
-                          console.log('Image uploaded:', file.name);
-                          alert(`Image "${file.name}" selected! To use this image, upload it to your hosting service and update the portfolio.`);
-                        };
-                        reader.readAsDataURL(file);
-                      }
-                    }}
-                  />
-                  <div className="text-center pointer-events-none">
-                    <Camera className="h-16 w-16 sm:h-20 sm:w-20 text-[rgb(218,255,1)] mx-auto mb-4" />
-                    <p className="text-[rgb(218,218,218)] font-semibold text-lg">Click to Upload Photo</p>
-                    <p className="text-[rgb(161,161,170)] text-sm mt-2 max-w-64 mx-auto">
-                      Upload your professional headshot here. Supports JPG, PNG, WebP formats.
-                    </p>
+                <div className="w-80 h-80 sm:w-96 sm:h-96 lg:w-[400px] lg:h-[400px] rounded-3xl border-2 border-[rgb(218,255,1)]/30 overflow-hidden hover:border-[rgb(218,255,1)] transition-all duration-300 hover:shadow-2xl hover:shadow-[rgb(218,255,1)]/20">
+                  {/* 
+                    TO ADD YOUR PHOTO:
+                    1. Put your image in: /public/images/profile.jpg
+                    2. Uncomment the img tag below and comment out the placeholder div
+                  */}
+                  
+                  {/* PLACEHOLDER - Remove this div when you add your photo */}
+                  <div className="w-full h-full bg-gradient-to-br from-[rgb(218,255,1)]/20 to-[rgb(166,190,21)]/20 flex items-center justify-center backdrop-blur-sm">
+                    <div className="text-center">
+                      <Camera className="h-16 w-16 sm:h-20 sm:w-20 text-[rgb(218,255,1)] mx-auto mb-4" />
+                      <p className="text-[rgb(218,218,218)] font-semibold text-lg">Professional Photo</p>
+                      <p className="text-[rgb(161,161,170)] text-sm mt-2 max-w-64 mx-auto">
+                        Replace with your image in /public/images/
+                      </p>
+                    </div>
                   </div>
+                  
+                  {/* YOUR PHOTO - Uncomment this when you add your image */}
+                  {/*
+                  <img 
+                    src="/images/profile.jpg" 
+                    alt="Akshaj Shivara Madhusudhan - Cybersecurity Professional"
+                    className="w-full h-full object-cover"
+                  />
+                  */}
                 </div>
+                
                 {/* Decorative elements */}
                 <div className="absolute -top-6 -right-6 w-12 h-12 bg-[rgb(218,255,1)] rounded-full animate-pulse opacity-70"></div>
                 <div className="absolute -bottom-8 -left-8 w-16 h-16 bg-[rgb(218,255,1)]/30 rounded-full animate-pulse delay-1000 opacity-50"></div>
-                
-                {/* Upload Instructions */}
-                <div className="absolute -bottom-16 left-0 right-0 text-center">
-                  <p className="text-xs text-[rgb(161,161,170)] bg-[rgb(26,28,30)]/80 px-4 py-2 rounded-lg backdrop-blur-sm">
-                    💡 Tip: Use a 400x400px professional headshot for best results
-                  </p>
-                </div>
               </div>
             </div>
             
