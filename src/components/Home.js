@@ -47,7 +47,7 @@ const LoadingSpinner = () => (
   <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-[rgb(17,17,19)] via-[rgb(26,28,30)] to-[rgb(17,17,19)]">
     <div className="text-center">
       <Loader2 className="h-12 w-12 text-[rgb(218,255,1)] animate-spin mx-auto mb-4" />
-      <p className="text-[rgb(218,218,218)] text-lg">Loading portfolio data...</p>
+      <p className="text-[rgb(218,218,218)] text-lg">Loading data...</p>
     </div>
   </div>
 );
@@ -77,19 +77,19 @@ const Home = () => {
   const [currentCommand, setCurrentCommand] = useState(0);
   
   const personalCommands = [
-    'whoami >> cybersecurity_professional_akshaj',
+    'whoami >> akshaj is a cybersecurity professional',
     'ls -la /career/goals >> [Security_Engineer, SOC_Analyst, Security_Architect]',
     'cat /aspirations.txt >> [Incident_Response_Specialist, Threat_Hunter, CISO]',
-    'grep -r "roles" /interests/ >> [Penetration_Tester, Security_Consultant, DevSecOps_Engineer]',
-    'find /opportunities -name "*security*" >> [Cybersecurity_Manager, Risk_Analyst, Compliance_Officer]',
-    'sudo apt-get install advanced-threat-detection',
-    'grep -r "AI.*Security" /research/ | head -10',
+    //'grep -r "roles" /interests/ >> [Penetration_Tester, Security_Consultant, DevSecOps_Engineer]',
+    //'find /opportunities -name "*security*" >> [Cybersecurity_Manager, Risk_Analyst, Compliance_Officer]',
+    //'sudo apt-get install advanced-threat-detection',
+    //'grep -r "AI.*Security" /research/ | head -10',
     'cat /skills/expertise.txt | grep -E "(SIEM|IAM|ICS|EDR)"',
-    'python detection_engine.py --target enterprise_security',
-    'wazuh-control start && echo "SOC Monitoring activated"',
-    'nmap -sS -A target_infrastructure | tee scan_results.txt',
-    'curl -X GET https://api.security.akshaj.com/threats',
-    'tail -f /var/log/security/incidents.log | grep CRITICAL'
+    //'python detection_engine.py --target enterprise_security',
+    //'wazuh-control start && echo "SOC Monitoring activated"',
+    //'nmap -sS -A target_infrastructure | tee scan_results.txt',
+    //'curl -X GET https://api.security.akshaj.com/threats',
+    //'tail -f /var/log/security/incidents.log | grep CRITICAL'
   ];
 
   useEffect(() => {
@@ -140,12 +140,20 @@ const Home = () => {
               {/* Logo Placeholder */}
               <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-[rgb(218,255,1)] to-[rgb(166,190,21)] rounded-xl flex items-center justify-center shadow-lg shadow-[rgb(218,255,1)]/20">
                 <div className="w-8 h-8 sm:w-10 sm:h-10 bg-[rgb(17,17,19)] rounded-lg flex items-center justify-center">
-                  <Shield className="h-4 w-4 sm:h-6 sm:w-6 text-[rgb(218,255,1)]" />
+                                    {
+                  <img 
+                    src="public/images/ak_logo.png" 
+                    alt="Akshaj navbar logo"
+                    className="w-full h-full object-cover"
+                  />
+                  }
+             {/* <Shield className="h-4 w-4 sm:h-6 sm:w-6 text-[rgb(218,255,1)]" />*/}
                 </div>
               </div>
-              <div className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-[rgb(218,255,1)] to-[rgb(166,190,21)] bg-clip-text text-transparent">
+            {/*<div className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-[rgb(218,255,1)] to-[rgb(166,190,21)] bg-clip-text text-transparent">
                 AKSHAJ
               </div>
+              */}
             </div>
             <div className="hidden md:flex space-x-8 lg:space-x-10">
               <button onClick={() => scrollToSection('about')} className="text-white hover:text-[rgb(218,255,1)] transition-all duration-300 font-medium relative group py-2">
@@ -277,13 +285,13 @@ const Home = () => {
                   </div>
                   
                   {/* YOUR PHOTO - Uncomment this when you add your image */}
-                  {/*
+                  {
                   <img 
-                    src="/images/profile.jpg" 
+                    src="public/images/ak_profile.jpg" 
                     alt="Akshaj Shivara Madhusudhan - Cybersecurity Professional"
                     className="w-full h-full object-cover"
                   />
-                  */}
+                  }
                 </div>
                 
                 {/* Decorative elements */}
@@ -535,7 +543,7 @@ const Home = () => {
             
             {/* LinkedIn Button - REPLACE LINKEDIN URL */}
             <Button 
-              onClick={() => window.open('https://linkedin.com/in/your-linkedin-username', '_blank')}
+              onClick={() => window.open('https://www.linkedin.com/in/akshajsm', '_blank')}
               variant="outline" 
               className="border-2 border-[rgb(218,255,1)]/50 text-[rgb(218,255,1)] hover:border-[rgb(218,255,1)] hover:bg-[rgb(218,255,1)]/10 px-10 py-4 rounded-2xl text-xl font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-[rgb(218,255,1)]/20"
             >
@@ -548,7 +556,7 @@ const Home = () => {
           <div className="flex flex-wrap justify-center gap-8 mb-12">
             {/* GitHub Button - REPLACE GITHUB URL */}
             <Button 
-              onClick={() => window.open('https://github.com/your-github-username', '_blank')}
+              onClick={() => window.open('https://www.github.com/2smakshaj6', '_blank')}
               variant="ghost"
               className="text-[rgb(218,218,218)] hover:text-[rgb(218,255,1)] hover:bg-[rgb(218,255,1)]/10 px-6 py-3 rounded-xl transition-all duration-300"
             >
@@ -556,7 +564,7 @@ const Home = () => {
               GitHub
             </Button>
             
-            {/* Phone Button - REPLACE PHONE NUMBER */}
+            {/* Phone Button - REPLACE PHONE NUMBER 
             <Button 
               onClick={() => window.open('tel:+1-555-123-4567', '_blank')}
               variant="ghost"
@@ -565,8 +573,8 @@ const Home = () => {
               <Terminal className="h-5 w-5 mr-2" />
               +1 (555) 123-4567
             </Button>
-            
-            {/* Website Button - REPLACE WEBSITE URL */}
+            */}
+            {/* Website Button - REPLACE WEBSITE URL 
             <Button 
               onClick={() => window.open('https://your-website.com', '_blank')}
               variant="ghost"
@@ -575,6 +583,7 @@ const Home = () => {
               <ExternalLink className="h-5 w-5 mr-2" />
               Portfolio
             </Button>
+            */}
           </div>
           
           {/* Contact Information Card */}
