@@ -4,23 +4,27 @@ import axios from 'axios';
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || 'http://localhost:8001';
 const API_BASE_URL = `${BACKEND_URL}/api`;
 
+console.log('🔗 Backend URL:', BACKEND_URL);
+console.log('🔗 API Base URL:', API_BASE_URL);
+
 // Create axios instance with default config
 const api = axios.create({
   baseURL: API_BASE_URL,
-  timeout: 30000,
+  timeout: 15000, // Reduced timeout
   headers: {
     'Content-Type': 'application/json',
-  }
+  },
+  withCredentials: false // Disable credentials for CORS
 });
 
 // Add request interceptor for logging
 api.interceptors.request.use(
   (config) => {
-    console.log(`API Request: ${config.method?.toUpperCase()} ${config.url}`);
+    console.log(`🚀 API Request: ${config.method?.toUpperCase()} ${config.baseURL}${config.url}`);
     return config;
   },
   (error) => {
-    console.error('API Request Error:', error);
+    console.error('❌ API Request Error:', error);
     return Promise.reject(error);
   }
 );
@@ -28,19 +32,24 @@ api.interceptors.request.use(
 // Add response interceptor for error handling
 api.interceptors.response.use(
   (response) => {
-    console.log(`API Response: ${response.status} ${response.config.url}`);
+    console.log(`✅ API Response: ${response.status} from ${response.config.url}`);
     return response;
   },
   (error) => {
-    console.error('API Response Error:', error.response?.status, error.response?.data);
+    console.error('❌ API Response Error:', {
+      status: error.response?.status,
+      statusText: error.response?.statusText,
+      url: error.config?.url,
+      data: error.response?.data
+    });
     
     // Handle common error scenarios
     if (error.response?.status === 404) {
-      console.warn('Resource not found');
+      console.warn('📝 Resource not found - this might be expected for first-time setup');
     } else if (error.response?.status === 500) {
-      console.error('Server error occurred');
+      console.error('🔥 Server error occurred');
     } else if (!error.response) {
-      console.error('Network error - unable to connect to server');
+      console.error('🌐 Network error - unable to connect to server');
     }
     
     return Promise.reject(error);

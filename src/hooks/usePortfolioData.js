@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import portfolioAPI from '../services/api';
+import { mockData } from '../mock';
 
 export const usePortfolioData = () => {
   const [portfolioData, setPortfolioData] = useState(null);
@@ -14,8 +15,13 @@ export const usePortfolioData = () => {
 
       // Initialize data if not already done
       if (!initialized) {
-        await portfolioAPI.initializeData();
-        setInitialized(true);
+        try {
+          await portfolioAPI.initializeData();
+          setInitialized(true);
+        } catch (initError) {
+          console.warn('Data initialization failed, but continuing...', initError);
+          setInitialized(true); // Continue even if init fails
+        }
       }
 
       // Fetch complete portfolio data
@@ -23,19 +29,35 @@ export const usePortfolioData = () => {
       
       // Transform backend data to frontend format
       const transformedData = {
-        stats: data.portfolio?.stats || [],
-        experience: data.experience || [],
-        projects: data.projects || [],
-        skills: data.skills || [],
-        education: data.education || [],
-        certifications: data.certifications || [],
+        stats: data.portfolio?.stats || mockData.stats,
+        experience: data.experience || mockData.experience,
+        projects: data.projects || mockData.projects,
+        skills: data.skills || mockData.skills,
+        education: data.education || mockData.education,
+        certifications: data.certifications || mockData.certifications,
         personalInfo: data.portfolio?.personalInfo || {}
       };
 
       setPortfolioData(transformedData);
     } catch (err) {
-      console.error('Error loading portfolio data:', err);
-      setError(err.message || 'Failed to load portfolio data');
+      console.error('Error loading portfolio data, falling back to mock data:', err);
+      
+      // Fallback to mock data if API fails
+      setPortfolioData({
+        stats: mockData.stats,
+        experience: mockData.experience,
+        projects: mockData.projects,
+        skills: mockData.skills,
+        education: mockData.education,
+        certifications: mockData.certifications,
+        personalInfo: {
+          name: "Akshaj Shivara Madhusudhan",
+          title: "Building Safer Systems at the Intersection of Cybersecurity & AI",
+          bio: "I'm a cybersecurity professional passionate about building safer digital ecosystems through the strategic integration of AI and traditional security practices."
+        }
+      });
+      
+      setError(null); // Clear error since we have fallback data
     } finally {
       setLoading(false);
     }
