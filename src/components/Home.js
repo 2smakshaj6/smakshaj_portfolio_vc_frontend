@@ -137,19 +137,19 @@ const Home = () => {
         <div className="container mx-auto px-4 sm:px-6 py-4 sm:py-6">
           <div className="flex justify-between items-center">
             <div className="flex items-center space-x-3 sm:space-x-4">
-              {/* Logo Placeholder */}
-              <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-[rgb(218,255,1)] to-[rgb(166,190,21)] rounded-xl flex items-center justify-center shadow-lg shadow-[rgb(218,255,1)]/20">
-                <div className="w-8 h-8 sm:w-10 sm:h-10 bg-[rgb(17,17,19)] rounded-lg flex items-center justify-center">
-                                
-                  <img 
+
+                 <img 
                     src="public/images/ak_logo.png" 
                     alt="Akshaj navbar logo"
                     className="w-full h-full object-cover"
                   />
-                  
-             {/* <Shield className="h-4 w-4 sm:h-6 sm:w-6 text-[rgb(218,255,1)]" />*/}
+              {/* Logo Placeholder 
+              <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-[rgb(218,255,1)] to-[rgb(166,190,21)] rounded-xl flex items-center justify-center shadow-lg shadow-[rgb(218,255,1)]/20">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 bg-[rgb(17,17,19)] rounded-lg flex items-center justify-center">
+             <Shield className="h-4 w-4 sm:h-6 sm:w-6 text-[rgb(218,255,1)]" />
                 </div>
               </div>
+              */}
             {/*<div className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-[rgb(218,255,1)] to-[rgb(166,190,21)] bg-clip-text text-transparent">
                 AKSHAJ
               </div>
@@ -271,9 +271,7 @@ const Home = () => {
                     TO ADD YOUR PHOTO:
                     1. Put your image in: /public/images/profile.jpg
                     2. Uncomment the img tag below and comment out the placeholder div
-                  */}
                   
-                  {/* PLACEHOLDER - Remove this div when you add your photo */}
                   <div className="w-full h-full bg-gradient-to-br from-[rgb(218,255,1)]/20 to-[rgb(166,190,21)]/20 flex items-center justify-center backdrop-blur-sm">
                     <div className="text-center">
                       <Camera className="h-16 w-16 sm:h-20 sm:w-20 text-[rgb(218,255,1)] mx-auto mb-4" />
@@ -283,9 +281,7 @@ const Home = () => {
                       </p>
                     </div>
                   </div>
-                  
-                  {/* YOUR PHOTO - Uncomment this when you add your image */}
-                  
+                  */}
                   <img 
                     src="public/images/ak_profile.jpg" 
                     alt="Akshaj Shivara Madhusudhan - Cybersecurity Professional"
