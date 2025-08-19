@@ -204,7 +204,7 @@ const Home = () => {
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
               <span className="text-white">Hi, </span>{' '}
               <span className="text-white">I am</span>
-              <span className="bg-gradient-to-r from-[rgb(218,255,1)] via-[rgb(255,255,1)] to-[rgb(218,255,1)] bg-clip-text text-transparent animate-pulse">Akshaj</span>{' '}
+              <span className="bg-gradient-to-r from-[rgb(218,255,1)] via-[rgb(255,255,1)] to-[rgb(218,255,1)] bg-clip-text text-transparent animate-pulse"> Akshaj</span>{' '}
             </h1>
             <p className="text-lg sm:text-xl lg:text-2xl text-[rgb(218,218,218)] mb-12 max-w-4xl mx-auto leading-relaxed px-4">
               BUILDING <span className="text-[rgb(218,255,1)] font-semibold">SAFER SYSTEMS</span> AT THE INTERSECTION OF{' '}
