@@ -132,81 +132,78 @@ const Home = () => {
       {/* Three.js Background */}
       <BackgroundScene />
       
-      {/* Enhanced Mobile-First Navigation with Better Spacing */}
-      <nav className="fixed top-0 w-full z-50 bg-gradient-to-r from-[rgb(17,17,19)]/95 via-[rgb(26,28,30)]/95 to-[rgb(17,17,19)]/95 backdrop-blur-md border-b-2 border-[rgb(218,255,1)]/30 shadow-lg">
-        <div className="container mx-auto px-4 sm:px-6 py-4 sm:py-6">
+      {/* Enhanced Larger Navigation Bar with Better UI */}
+      <nav className="fixed top-0 w-full z-50 bg-gradient-to-r from-[rgb(17,17,19)]/95 via-[rgb(26,28,30)]/95 to-[rgb(17,17,19)]/95 backdrop-blur-md border-b-2 border-[rgb(218,255,1)]/40 shadow-2xl shadow-[rgb(218,255,1)]/10">
+        <div className="container mx-auto px-4 sm:px-6 py-6 sm:py-8">
           <div className="flex justify-between items-center">
-            <div className="flex items-center space-x-3 sm:space-x-4">
-
-                 <img 
-                    src="/images/ak_logo.png" 
-                    alt="Akshaj navbar logo"
-                    className="w-12 h-12 rounded-lg"
-                  />
-              {/* Logo Placeholder 
-              <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-[rgb(218,255,1)] to-[rgb(166,190,21)] rounded-xl flex items-center justify-center shadow-lg shadow-[rgb(218,255,1)]/20">
-                <div className="w-8 h-8 sm:w-10 sm:h-10 bg-[rgb(17,17,19)] rounded-lg flex items-center justify-center">
-             <Shield className="h-4 w-4 sm:h-6 sm:w-6 text-[rgb(218,255,1)]" />
+            <div className="flex items-center space-x-4 sm:space-x-6">
+              {/* Enhanced Logo */}
+              <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-[rgb(218,255,1)] via-[rgb(255,255,1)] to-[rgb(166,190,21)] rounded-2xl flex items-center justify-center shadow-2xl shadow-[rgb(218,255,1)]/30 hover:scale-105 transition-transform duration-300">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 bg-[rgb(17,17,19)] rounded-xl flex items-center justify-center">
+                  <Shield className="h-6 w-6 sm:h-8 sm:w-8 text-[rgb(218,255,1)]" />
                 </div>
               </div>
-              */}
-            {/*<div className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-[rgb(218,255,1)] to-[rgb(166,190,21)] bg-clip-text text-transparent">
-                AKSHAJ
+              <div className="flex flex-col">
+                <div className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-[rgb(218,255,1)] via-[rgb(255,255,1)] to-[rgb(166,190,21)] bg-clip-text text-transparent">
+                  AKSHAJ
+                </div>
+                <div className="text-xs sm:text-sm text-[rgb(161,161,170)] font-medium tracking-wider">
+                  CYBERSECURITY ENGINEER
+                </div>
               </div>
-              */}
             </div>
-            <div className="hidden md:flex space-x-8 lg:space-x-10">
-              <button onClick={() => scrollToSection('about')} className="text-white hover:text-[rgb(218,255,1)] transition-all duration-300 font-medium relative group py-2">
+            <div className="hidden md:flex space-x-10 lg:space-x-12">
+              <button onClick={() => scrollToSection('about')} className="text-white hover:text-[rgb(218,255,1)] transition-all duration-300 font-semibold text-lg relative group py-3 px-2">
                 About
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[rgb(218,255,1)] transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute -bottom-2 left-0 w-0 h-1 bg-gradient-to-r from-[rgb(218,255,1)] to-[rgb(166,190,21)] transition-all duration-300 group-hover:w-full rounded-full"></span>
               </button>
-              <button onClick={() => scrollToSection('experience')} className="text-white hover:text-[rgb(218,255,1)] transition-all duration-300 font-medium relative group py-2">
+              <button onClick={() => scrollToSection('experience')} className="text-white hover:text-[rgb(218,255,1)] transition-all duration-300 font-semibold text-lg relative group py-3 px-2">
                 Experience
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[rgb(218,255,1)] transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute -bottom-2 left-0 w-0 h-1 bg-gradient-to-r from-[rgb(218,255,1)] to-[rgb(166,190,21)] transition-all duration-300 group-hover:w-full rounded-full"></span>
               </button>
-              <button onClick={() => scrollToSection('projects')} className="text-white hover:text-[rgb(218,255,1)] transition-all duration-300 font-medium relative group py-2">
+              <button onClick={() => scrollToSection('projects')} className="text-white hover:text-[rgb(218,255,1)] transition-all duration-300 font-semibold text-lg relative group py-3 px-2">
                 Projects
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[rgb(218,255,1)] transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute -bottom-2 left-0 w-0 h-1 bg-gradient-to-r from-[rgb(218,255,1)] to-[rgb(166,190,21)] transition-all duration-300 group-hover:w-full rounded-full"></span>
               </button>
-              <button onClick={() => scrollToSection('skills')} className="text-white hover:text-[rgb(218,255,1)] transition-all duration-300 font-medium relative group py-2">
+              <button onClick={() => scrollToSection('skills')} className="text-white hover:text-[rgb(218,255,1)] transition-all duration-300 font-semibold text-lg relative group py-3 px-2">
                 Skills
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[rgb(218,255,1)] transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute -bottom-2 left-0 w-0 h-1 bg-gradient-to-r from-[rgb(218,255,1)] to-[rgb(166,190,21)] transition-all duration-300 group-hover:w-full rounded-full"></span>
               </button>
-              <button onClick={() => scrollToSection('contact')} className="text-white hover:text-[rgb(218,255,1)] transition-all duration-300 font-medium relative group py-2">
+              <button onClick={() => scrollToSection('contact')} className="text-white hover:text-[rgb(218,255,1)] transition-all duration-300 font-semibold text-lg relative group py-3 px-2">
                 Contact
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[rgb(218,255,1)] transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute -bottom-2 left-0 w-0 h-1 bg-gradient-to-r from-[rgb(218,255,1)] to-[rgb(166,190,21)] transition-all duration-300 group-hover:w-full rounded-full"></span>
               </button>
             </div>
-            {/* Mobile Menu Button */}
+            {/* Enhanced Mobile Menu Button */}
             <div className="md:hidden">
               <button 
                 onClick={() => scrollToSection('contact')}
-                className="text-[rgb(218,255,1)] hover:text-white transition-colors p-3 rounded-lg border border-[rgb(218,255,1)]/30"
+                className="text-[rgb(218,255,1)] hover:text-white transition-all duration-300 p-4 rounded-xl border-2 border-[rgb(218,255,1)]/40 hover:border-[rgb(218,255,1)] hover:bg-[rgb(218,255,1)]/10 backdrop-blur-sm"
               >
-                <Terminal className="h-5 w-5" />
+                <Terminal className="h-6 w-6" />
               </button>
             </div>
           </div>
         </div>
       </nav>
 
-      {/* Mobile-Optimized Hero Section with Better Spacing */}
-      <section className="pt-24 sm:pt-32 lg:pt-36 pb-20 sm:pb-24 lg:pb-28 px-4 sm:px-6 relative">{/* Updated padding-top to account for larger navbar */}
+      {/* Enhanced Hero Section with Better Spacing for Larger Navbar */}
+      <section className="pt-32 sm:pt-40 lg:pt-44 pb-20 sm:pb-24 lg:pb-28 px-4 sm:px-6 relative">{/* Increased padding-top for larger navbar */}
         <div className="container mx-auto text-center relative z-10">
-          <div className="mb-8 sm:mb-12">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 sm:mb-6 leading-tight">
-              <span className="text-white">Hi, </span>{' '}
-              <span className="bg-gradient-to-r from-[rgb(218,255,1)] via-[rgb(255,255,1)] to-[rgb(218,255,1)] bg-clip-text text-transparent animate-pulse">I am</span>{' '}
-              <span className="text-white">Akshaj</span>
+          <div className="mb-12">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+              <span className="text-white">AKSHAJ</span>{' '}
+              <span className="bg-gradient-to-r from-[rgb(218,255,1)] via-[rgb(255,255,1)] to-[rgb(218,255,1)] bg-clip-text text-transparent animate-pulse">SHIVARA</span>{' '}
+              <span className="text-white">MADHUSUDHAN</span>
             </h1>
-            <p className="text-lg sm:text-xl lg:text-2xl text-[rgb(218,218,218)] mb-8 sm:mb-12 max-w-4xl mx-auto leading-relaxed px-4">
-              I am Building<span className="text-[rgb(218,255,1)] font-semibold"> Safer Systems</span> at the Intersection of{' '}
-              <span className="text-[rgb(218,255,1)] font-semibold">Cybersecurity and AI</span>
+            <p className="text-lg sm:text-xl lg:text-2xl text-[rgb(218,218,218)] mb-12 max-w-4xl mx-auto leading-relaxed px-4">
+              BUILDING <span className="text-[rgb(218,255,1)] font-semibold">SAFER SYSTEMS</span> AT THE INTERSECTION OF{' '}
+              <span className="text-[rgb(218,255,1)] font-semibold">CYBERSECURITY & AI</span>
             </p>
           </div>
 
-          {/* Mobile-Optimized Enhanced Terminal */}
-          <div className="max-w-4xl mx-auto mb-12 sm:mb-16">
+          {/* Enhanced Terminal */}
+          <div className="max-w-4xl mx-auto mb-16">
             <div className="bg-gradient-to-r from-[rgb(26,28,30)] via-[rgb(38,40,42)] to-[rgb(26,28,30)] border-2 border-[rgb(218,255,1)]/30 rounded-xl sm:rounded-2xl overflow-hidden shadow-2xl shadow-[rgb(218,255,1)]/10 backdrop-blur-sm">
               <div className="bg-gradient-to-r from-[rgb(38,40,42)] to-[rgb(26,28,30)] px-4 sm:px-6 py-3 sm:py-4 flex items-center border-b border-[rgb(218,255,1)]/20">
                 <div className="flex space-x-2 sm:space-x-3 mr-4 sm:mr-6">
@@ -214,7 +211,7 @@ const Home = () => {
                   <div className="w-3 h-3 sm:w-4 sm:h-4 bg-yellow-500 rounded-full shadow-lg animate-pulse"></div>
                   <div className="w-3 h-3 sm:w-4 sm:h-4 bg-green-500 rounded-full shadow-lg animate-pulse"></div>
                 </div>
-                <div className="text-[rgb(218,255,1)] font-mono text-sm sm:text-lg font-semibold">akshajmadhusudhan ~ -zsh - 73x5</div>
+                <div className="text-[rgb(218,255,1)] font-mono text-sm sm:text-lg font-semibold">akshaj@security-terminal:~</div>
               </div>
               <div className="p-4 sm:p-6 lg:p-8 font-mono text-left text-sm sm:text-base lg:text-lg">
                 <div className="flex items-center">
@@ -226,8 +223,8 @@ const Home = () => {
             </div>
           </div>
 
-          {/* Mobile-Optimized CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center mb-16 sm:mb-20 px-4">
+          {/* Enhanced CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center mb-20">
             <Button 
               onClick={() => scrollToSection('projects')}
               className="w-full sm:w-auto bg-gradient-to-r from-[rgb(218,255,1)] to-[rgb(166,190,21)] text-[rgb(17,17,19)] hover:from-[rgb(166,190,21)] hover:to-[rgb(218,255,1)] px-8 sm:px-10 py-3 sm:py-4 rounded-xl sm:rounded-2xl text-lg sm:text-xl font-bold transition-all duration-300 hover:shadow-2xl hover:shadow-[rgb(218,255,1)]/40 hover:scale-105 transform"
@@ -243,14 +240,34 @@ const Home = () => {
             </Button>
           </div>
 
-          {/* Mobile-Optimized Enhanced Stats */}
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 max-w-4xl mx-auto px-4">
-            {portfolioData.stats?.map((stat, index) => (
-              <div key={index} className="text-center p-4 sm:p-6 bg-gradient-to-br from-[rgb(26,28,30)]/60 to-[rgb(38,40,42)]/60 rounded-xl sm:rounded-2xl border border-[rgb(218,255,1)]/20 backdrop-blur-sm hover:border-[rgb(218,255,1)]/50 transition-all duration-300 hover:shadow-lg hover:shadow-[rgb(218,255,1)]/20">
-                <div className="text-2xl sm:text-3xl lg:text-4xl font-bold bg-gradient-to-r from-[rgb(218,255,1)] to-[rgb(166,190,21)] bg-clip-text text-transparent mb-2 sm:mb-3">{stat.value}</div>
-                <div className="text-[rgb(161,161,170)] text-xs sm:text-sm font-medium uppercase tracking-wide">{stat.label}</div>
+          {/* Replace Stats with Security Expertise Highlights */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {/* Security Focus */}
+            <div className="group cursor-pointer">
+              <div className="text-center p-8 bg-gradient-to-br from-[rgb(26,28,30)]/60 to-[rgb(38,40,42)]/60 rounded-2xl border border-[rgb(218,255,1)]/20 backdrop-blur-sm hover:border-[rgb(218,255,1)]/50 transition-all duration-300 hover:shadow-lg hover:shadow-[rgb(218,255,1)]/20 hover:-translate-y-2">
+                <Shield className="h-12 w-12 text-[rgb(218,255,1)] mx-auto mb-4" />
+                <h3 className="text-2xl font-bold text-white mb-3">Enterprise Security</h3>
+                <p className="text-[rgb(161,161,170)] leading-relaxed">SIEM tuning, IAM management, and threat detection across enterprise environments with focus on IT/OT segmentation.</p>
               </div>
-            ))}
+            </div>
+
+            {/* AI Research */}
+            <div className="group cursor-pointer">
+              <div className="text-center p-8 bg-gradient-to-br from-[rgb(26,28,30)]/60 to-[rgb(38,40,42)]/60 rounded-2xl border border-[rgb(218,255,1)]/20 backdrop-blur-sm hover:border-[rgb(218,255,1)]/50 transition-all duration-300 hover:shadow-lg hover:shadow-[rgb(218,255,1)]/20 hover:-translate-y-2">
+                <Zap className="h-12 w-12 text-[rgb(218,255,1)] mx-auto mb-4" />
+                <h3 className="text-2xl font-bold text-white mb-3">AI Security Research</h3>
+                <p className="text-[rgb(161,161,170)] leading-relaxed">Fine-tuning LLMs for threat detection, adversarial prompt analysis, and developing secure AI deployment guidelines.</p>
+              </div>
+            </div>
+
+            {/* Development */}
+            <div className="group cursor-pointer">
+              <div className="text-center p-8 bg-gradient-to-br from-[rgb(26,28,30)]/60 to-[rgb(38,40,42)]/60 rounded-2xl border border-[rgb(218,255,1)]/20 backdrop-blur-sm hover:border-[rgb(218,255,1)]/50 transition-all duration-300 hover:shadow-lg hover:shadow-[rgb(218,255,1)]/20 hover:-translate-y-2">
+                <Code className="h-12 w-12 text-[rgb(218,255,1)] mx-auto mb-4" />
+                <h3 className="text-2xl font-bold text-white mb-3">Security Tools</h3>
+                <p className="text-[rgb(161,161,170)] leading-relaxed">Building detection engines, LLM AutoSOC systems, and ICS lab simulations for real-world security challenges.</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
