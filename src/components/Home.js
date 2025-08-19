@@ -137,7 +137,12 @@ const Home = () => {
         <div className="container mx-auto px-4 sm:px-6 py-6 sm:py-8">
           <div className="flex justify-between items-center">
             <div className="flex items-center space-x-4 sm:space-x-6">
-              {/* Enhanced Logo */}
+                <img 
+                    src="/images/ak_profile.jpg" 
+                    alt="Akshaj Shivara Madhusudhan - Cybersecurity Professional"
+                    className="w-full h-full object-cover"
+                  />
+              {/* Enhanced Logo 
               <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-[rgb(218,255,1)] via-[rgb(255,255,1)] to-[rgb(166,190,21)] rounded-2xl flex items-center justify-center shadow-2xl shadow-[rgb(218,255,1)]/30 hover:scale-105 transition-transform duration-300">
                 <div className="w-12 h-12 sm:w-14 sm:h-14 bg-[rgb(17,17,19)] rounded-xl flex items-center justify-center">
                   <Shield className="h-6 w-6 sm:h-8 sm:w-8 text-[rgb(218,255,1)]" />
@@ -152,6 +157,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
+            */}
             <div className="hidden md:flex space-x-10 lg:space-x-12">
               <button onClick={() => scrollToSection('about')} className="text-white hover:text-[rgb(218,255,1)] transition-all duration-300 font-semibold text-lg relative group py-3 px-2">
                 About
