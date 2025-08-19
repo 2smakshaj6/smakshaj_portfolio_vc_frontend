@@ -146,7 +146,8 @@ const Home = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-              </div>          
+              </div>   
+              </div>       
               {/* Enhanced Logo 
               <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-[rgb(218,255,1)] via-[rgb(255,255,1)] to-[rgb(166,190,21)] rounded-2xl flex items-center justify-center shadow-2xl shadow-[rgb(218,255,1)]/30 hover:scale-105 transition-transform duration-300">
                 <div className="w-12 h-12 sm:w-14 sm:h-14 bg-[rgb(17,17,19)] rounded-xl flex items-center justify-center">
