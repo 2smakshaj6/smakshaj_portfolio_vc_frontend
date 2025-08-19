@@ -137,11 +137,16 @@ const Home = () => {
         <div className="container mx-auto px-4 sm:px-6 py-6 sm:py-8">
           <div className="flex justify-between items-center">
             <div className="flex items-center space-x-4 sm:space-x-6">
-                <img 
-                    src="/images/ak_profile.jpg" 
+              {/* Enhanced Logo */}
+              <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-[rgb(218,255,1)] via-[rgb(255,255,1)] to-[rgb(166,190,21)] rounded-2xl flex items-center justify-center shadow-2xl shadow-[rgb(218,255,1)]/30 hover:scale-105 transition-transform duration-300">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 bg-[rgb(17,17,19)] rounded-xl flex items-center justify-center">
+                  <img 
+                    src="/images/ak_logo.png" 
                     alt="Akshaj Shivara Madhusudhan - Cybersecurity Professional"
                     className="w-full h-full object-cover"
                   />
+                </div>
+              </div>          
               {/* Enhanced Logo 
               <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-[rgb(218,255,1)] via-[rgb(255,255,1)] to-[rgb(166,190,21)] rounded-2xl flex items-center justify-center shadow-2xl shadow-[rgb(218,255,1)]/30 hover:scale-105 transition-transform duration-300">
                 <div className="w-12 h-12 sm:w-14 sm:h-14 bg-[rgb(17,17,19)] rounded-xl flex items-center justify-center">
@@ -198,9 +203,9 @@ const Home = () => {
         <div className="container mx-auto text-center relative z-10">
           <div className="mb-12">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-              <span className="text-white">AKSHAJ</span>{' '}
-              <span className="bg-gradient-to-r from-[rgb(218,255,1)] via-[rgb(255,255,1)] to-[rgb(218,255,1)] bg-clip-text text-transparent animate-pulse">SHIVARA</span>{' '}
-              <span className="text-white">MADHUSUDHAN</span>
+              <span className="text-white">Hi, </span>{' '}
+              <span className="text-white">I am</span>
+              <span className="bg-gradient-to-r from-[rgb(218,255,1)] via-[rgb(255,255,1)] to-[rgb(218,255,1)] bg-clip-text text-transparent animate-pulse">Akshaj</span>{' '}
             </h1>
             <p className="text-lg sm:text-xl lg:text-2xl text-[rgb(218,218,218)] mb-12 max-w-4xl mx-auto leading-relaxed px-4">
               BUILDING <span className="text-[rgb(218,255,1)] font-semibold">SAFER SYSTEMS</span> AT THE INTERSECTION OF{' '}
